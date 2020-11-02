@@ -1,26 +1,69 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 2</title>
+  <title>Week 5, Part 2</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Week 5, Part 2</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h1>Week 5, Part 2</h1>
-
-	</body>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <h1>Silly Game</h1>
+  <div>
+    <label for="customname">Enter custom first name:</label>
+    <input id="customname" type="text" placeholder="">
+  </div>
+  <div>
+    <label for="customLast">Enter custom last name:</label>
+    <input id="customLast" type="text" placeholder="">
+  </div>
+  <div>
+    <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+    <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+  </div>
+  <div>
+    <label for="it">IT</label><input id="it" type="radio" name="ukus" value="it">
+    <label for="eng">ENG</label><input id="eng" type="radio" name="ukus" value="eng">
+  </div>
+  <div>
+    <button class="randomize" value="Click to disable button." onclick="disableButton(this);">Generate random story</button>
+  </div>
+  <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+  <p class="story"></p>
+  <div>
+      <label>Change Webpage Background To:</label>
+      <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+      <button type="button" onclick="changeBodyBg('lime');">Lime</button>
+      <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+  </div>
+  <div>
+      <a class="btn btn-secondary reset hide" onClick="refreshPage()">Restart</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 
 </html>
