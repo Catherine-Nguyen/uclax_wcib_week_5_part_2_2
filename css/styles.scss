@@ -4,6 +4,7 @@ body {
   text-align: center;
   background-image: url("../images/italy.jpg");
   color: black; }
+  font-size: 18px;
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 50px;
@@ -40,4 +41,8 @@ color: black;
 .btn-primary {
   font-size:  18px;
   border-width: 1px;
+}
+
+.cover-container {
+  max-width: 65em;
 }
