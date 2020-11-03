@@ -1,7 +1,8 @@
 body {
   padding-top: 5rem;
+  font-family: 'Helvatica';
   text-align: center;
-  background-color: lavenderblush;
+  background-image: url("../images/italy.jpg");
   color: black; }
 
 .starter-template {
